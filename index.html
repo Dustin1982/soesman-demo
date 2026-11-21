@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Soesman Bouw — Precisie tot in de afwerking</title>
+<meta name="description" content="Soesman Bouw — verbouwing, metselwerk, interieur op maat, tegelwerk, stucwerk, wandafwerking en houtverbindingen. Demo-ontwerp.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 fill=%22%23120e0a%22/%3E%3Cpath d=%22M6 24 L16 8 L26 24%22 fill=%22none%22 stroke=%22%23c9a46a%22 stroke-width=%223%22/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 fill=%27%23120e0a%27/%3E%3Cpath d=%27M6 24 L16 8 L26 24%27 stroke=%27%23c9a46a%27 stroke-width=%273%27 fill=%27none%27/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grain"></div>
+<div id="loader"><svg viewBox="0 0 340 120"><path class="lp" d="M20 100 L20 40 L170 10 L320 40 L320 100 Z M150 100 L150 62 L190 62 L190 100"/><text class="lt" x="170" y="90" text-anchor="middle">SOESMAN</text></svg></div>
+<div class="cur cur-ring" id="ring"><span id="ringtxt">Teken</span></div><div class="cur cur-dot" id="dot"></div>
+<div class="ruler"><i id="rbar"></i><b id="rmm">0 mm</b></div>
+
+<nav id="nav">
+  <a href="#hero" class="logo" data-snd="tick"><img src="assets/logo-light.png" alt="Soesman Bouw"></a>
+  <ul>
+    <li><a href="#tafel" data-snd="tick">Tekentafel</a></li>
+    <li><a href="#diensten" data-snd="tick">Vakwerk</a></li>
+    <li><a href="#ruimte" data-snd="tick">De ruimte</a></li>
+    <li><a href="#aanvraag" data-snd="tick">Aanvraag</a></li>
+  </ul>
+  <div class="navr">
+    <button class="sound on" id="snd" aria-label="Geluid aan/uit"><span class="bars"><i></i><i></i><i></i><i></i></span><span id="sndtxt">Geluid</span></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header id="hero">
+  <div class="hero-img" id="heroimg"><div class="ph" id="heroph"></div><div class="spot"></div><div class="cap">Sfeerimpressie van een eiken interieur</div></div>
+  <div class="hero-txt">
+    <img class="logo-big" src="assets/logo-light.png" alt="Soesman Bouw">
+    <h1><span class="split" id="h1a">Precisie tot in</span><br><span class="l2"><span class="split" id="h1b">de afwerking.</span><svg viewBox="0 0 600 30" preserveAspectRatio="none"><path d="M4 20 C 150 6, 420 30, 596 12"/></svg></span></h1>
+    <p class="lead rv">Van de indeling van een woning tot de aansluiting tussen hout, steen en stucwerk. Voor Soesman Bouw zit kwaliteit in de afwerking.</p>
+    <div class="rv"><a href="#tafel" class="btn mag" data-snd="click">Naar de tekentafel <span>→</span></a></div>
+    <div class="scrollhint"><i></i>Scroll</div>
+  </div>
+</header>
+
+<div class="marq"><div id="marq"></div></div>
+
+<!-- TEKENTAFEL -->
+<section id="tafel">
+ <div class="wrap tafel-grid">
+  <div class="tafel-copy">
+    <div class="eyebrow rv">Soesman Bouw / Werkwijze</div>
+    <h2 class="rv"><span class="mask"><span>Op de</span></span><span class="mask"><span><em>tekentafel.</em></span></span></h2>
+    <p class="lead rv">Elke klus begint op papier. Beweeg over de tekentafel en zie de plattegrond ontstaan — klap hem daarna open en trek een la open voor elk vak.</p>
+    <div class="steps rv" id="tsteps"><span class="on">1 · Teken</span><span>2 · Klap open</span><span>3 · Kies een la</span></div>
+    <div class="hint rv"><span class="pulse"></span><span id="thint">Beweeg of tik op de tafel</span></div>
+  </div>
+  <div class="stage" id="stage">
+    <div class="board" id="board">
+      <div class="frame"></div><div class="edge"></div>
+      <div class="paper" id="paper">
+        <svg class="plan" id="plan" viewBox="0 0 800 520"></svg>
+        <div class="titleblock"><div class="t">Woonhuis — begane grond</div><div>Schaal 1:50</div><div>Blad 01</div><div>Soesman Bouw</div><div>Voorbeeld</div></div>
+        <div class="stamp">Akkoord</div>
+        <div class="cover"><i class="front"><small>Soesman Bouw</small>Bouwplan<small>Beweeg om te openen</small></i><i class="back"></i></div>
+      </div>
+      <div class="tsq"></div>
+    </div>
+    <svg class="pencil" id="pencil" viewBox="0 0 150 14"><defs><linearGradient id="pg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f0c96a"/><stop offset="1" stop-color="#b8862f"/></linearGradient></defs><polygon points="0,7 14,2 14,12" fill="#e8d2a8"/><polygon points="0,7 5,5.2 5,8.8" fill="#333"/><rect x="14" y="2" width="118" height="10" fill="url(#pg)"/><rect x="14" y="6.5" width="118" height="1" fill="rgba(0,0,0,.15)"/><rect x="132" y="1.5" width="8" height="11" fill="#c8c8c8"/><rect x="140" y="1.5" width="10" height="11" rx="2" fill="#c67a6a"/></svg>
+    <button class="btn openbtn" id="openbtn" data-snd="click">Klap de tafel open ↗</button>
+    <div class="drawers" id="drawers"></div>
+    <div class="sheet" id="sheet">
+      <div class="fold"></div>
+      <div class="sv"><svg id="sheetsvg" viewBox="0 0 400 300"></svg></div>
+      <div class="st"><div class="k" id="sk"></div><h4 id="sh"></h4><div id="sp"></div><a href="#" id="sa" data-snd="click">Bekijk het detail ↓</a></div>
+      <button class="x" id="sx" aria-label="Sluiten">×</button>
+      <div class="nav2"><button id="sprev" aria-label="Vorige">‹</button><button id="snext" aria-label="Volgende">›</button></div>
+    </div>
+  </div>
+ </div>
+</section>
+
+<!-- DIENSTEN -->
+<section id="diensten">
+ <div class="wrap">
+  <!-- 1 verbouwing -->
+  <div class="svc" id="s-verbouwing">
+    <div class="copy">
+      <div class="eyebrow rv">01 — Op de tekentafel</div>
+      <h3 class="rv">Verbouwing &amp; renovatie</h3>
+      <p class="rv"><strong>Indeling en looproutes.</strong> Een verbouwing begint bij het dagelijks gebruik. Waar komt u binnen met boodschappen? Welke deur staat steeds in de weg? Op de plattegrond leggen we de bestaande situatie naast de gewenste indeling.</p>
+      <p class="rv">Ook de volgorde van het werk komt op tafel. Bespreek welke ruimtes bereikbaar moeten blijven, waar materialen binnenkomen en welke keuzes vóór de start vast moeten liggen.</p>
+    </div>
+    <div class="demo plan2 pad rv" id="plan2">
+      <div class="ctrl"><button class="chip on" data-v="best">Bestaand</button><button class="chip" data-v="gew">Gewenst</button></div>
+      <svg viewBox="0 0 600 440" id="plan2svg"></svg>
+      <div class="note" id="plan2note">Looproute: entree → keuken</div>
+    </div>
+  </div>
+  <div class="svc-sep"></div>
+  <!-- 2 metselwerk -->
+  <div class="svc rev" id="s-metselwerk">
+    <div class="copy">
+      <div class="eyebrow rv">02 — Op de tekentafel</div>
+      <h3 class="rv">Metselwerk</h3>
+      <p class="rv"><strong>Steen en voeg.</strong> Bij een nieuwe muur of een plaatselijk herstel bepalen steenformaat, metselverband en voeg samen het aanzicht. Vooral naast bestaand werk valt het op als een horizontale voeg nét op een andere hoogte loopt.</p>
+      <p class="rv">Een proefvlak maakt de keuze tastbaar. Bekijk steen en voeg buiten in daglicht en let ook op de aansluiting rond een hoek, kozijn of dorpel.</p>
+    </div>
+    <div class="demo brick pad padb rv" id="brick">
+      <div class="ctrl"><button class="chip on" data-b="half">Halfsteens</button><button class="chip" data-b="kruis">Kruisverband</button><button class="chip" data-b="vlaams">Vlaams</button><button class="chip" data-b="lev">Voeg uitlijnen</button></div>
+      <svg viewBox="0 0 600 420" id="bricksvg"></svg>
+      <div class="note" id="bricknote">Scroll: de muur groeit laag voor laag</div>
+    </div>
+  </div>
+  <div class="svc-sep"></div>
+  <!-- 3 interieur -->
+  <div class="svc" id="s-interieur">
+    <div class="copy">
+      <div class="eyebrow rv">03 — Op de tekentafel</div>
+      <h3 class="rv">Interieur op maat</h3>
+      <p class="rv"><strong>Kastindeling.</strong> Hoeveel ruimte vraagt wat u wilt opbergen? Bespreek de vakverdeling, de diepte en de manier waarop de kast aansluit op vloer en plafond.</p>
+      <p class="rv">Denk ook aan wat achter de deuren verdwijnt. Een stopcontact, leiding of scheve hoek bepaalt soms precies waar een kastvak eindigt.</p>
+    </div>
+    <div class="demo rv">
+      <div class="ctrl"><button class="chip" data-c="2">2 vakken</button><button class="chip on" data-c="3">3 vakken</button><button class="chip" data-c="4">4 vakken</button><button class="chip" data-c="svc">Achter de deur</button></div>
+      <div class="cab" id="cab"><div class="dim"><span id="cabdim">3 vakken</span></div><div class="unit" id="unit"></div></div>
+      <div class="note">Beweeg erover: deuren open</div>
+    </div>
+  </div>
+  <div class="svc-sep"></div>
+  <!-- 4 tegelwerk -->
+  <div class="svc rev" id="s-tegelwerk">
+    <div class="copy">
+      <div class="eyebrow rv">04 — Op de tekentafel</div>
+      <h3 class="rv">Tegelwerk</h3>
+      <p class="rv"><strong>Verdeling en snijlijnen.</strong> Een rustig tegelvlak begint met de verdeling. Vanuit de zichtlijn bij de deur bekijken we waar de voegen lopen en hoe breed de laatste rij langs de wand wordt. Zo zijn de snijstukken vooraf in beeld.</p>
+      <p class="rv">Bij een nis, buitenhoek of overgang naar een houten vloer komen meerdere lijnen samen. Leg tegel, voegkleur en randafwerking naast elkaar om te zien hoe dat detail uitpakt.</p>
+    </div>
+    <div class="demo tiles pad padb rv" id="tiles">
+      <div class="ctrl"><button class="chip on" data-t="wand">Vanaf de wand</button><button class="chip" data-t="zicht">Vanuit de zichtlijn</button><button class="chip" data-t="voeg">Voegkleur</button></div>
+      <svg viewBox="0 0 600 440" id="tilesvg"></svg>
+      <div class="rng">Tegel <input type="range" id="tsize" min="30" max="90" step="15" value="60"> <span id="tsizev">60 cm</span></div>
+      <div class="note" id="tilenote"></div>
+    </div>
+  </div>
+  <div class="svc-sep"></div>
+  <!-- 5 stucwerk -->
+  <div class="svc" id="s-stucwerk">
+    <div class="copy">
+      <div class="eyebrow rv">05 — Op de tekentafel</div>
+      <h3 class="rv">Stucwerk</h3>
+      <p class="rv"><strong>Ondergrond en afwerking.</strong> Langs een raam laat strijklicht iedere overgang zien. Daarom begint het gesprek bij de ondergrond en de gewenste uitstraling. Wilt u een glad wandvlak of juist een fijne structuur waarin het licht zachter valt?</p>
+      <p class="rv">Ook de randen maken verschil. Bespreek vooraf hoe het stucwerk eindigt bij de plint, een kozijn of een houten paneel. Een materiaalstaal helpt om kleur en structuur in de ruimte te beoordelen.</p>
+    </div>
+    <div class="demo plaster rv" id="plaster">
+      <div class="ctrl"><button class="chip on" data-p="glad">Glad</button><button class="chip" data-p="fijn">Fijne structuur</button><button class="chip" data-p="kalk">Kalkstuc</button></div>
+      <svg viewBox="0 0 800 500" preserveAspectRatio="none"><defs><filter id="raking" x="0" y="0" width="100%" height="100%"><feTurbulence id="pturb" type="fractalNoise" baseFrequency="0.02" numOctaves="4" seed="7" result="n"/><feDiffuseLighting id="plight" in="n" surfaceScale="0.8" diffuseConstant="1.1" lighting-color="#f6e7cf" result="l"><fePointLight id="ppt" x="40" y="160" z="70"/></feDiffuseLighting><feComposite in="l" in2="SourceGraphic" operator="arithmetic" k1="1" k2="0" k3="0" k4="0"/></filter></defs><rect width="800" height="500" fill="#e9dcc6" filter="url(#raking)"/></svg>
+      <div class="win"></div><div class="plint"></div><div class="lamp" id="lamp"></div>
+      <div class="note">Beweeg het licht langs de wand</div>
+    </div>
+  </div>
+  <div class="svc-sep"></div>
+  <!-- 6 wandafwerking -->
+  <div class="svc rev" id="s-wandafwerking">
+    <div class="copy">
+      <div class="eyebrow rv">06 — Op de tekentafel</div>
+      <h3 class="rv">Wandafwerking</h3>
+      <p class="rv"><strong>Deur in de wand.</strong> Een vlakke deur begint bij de verdeling van de wand. Bekijk samen hoe de naden, de houtnerf en de doorgang op elkaar aansluiten.</p>
+      <p class="rv">Door het patroon vooraf over wand en deur te verdelen, blijft de doorgang onderdeel van het grotere vlak. Bekijk het resultaat ook eens vanaf de andere kant van de ruimte.</p>
+    </div>
+    <div class="demo wallx rv" id="wallx">
+      <div class="behind"></div><div class="light"></div>
+      <div class="panels" id="wpanels"></div>
+      <div class="dr" id="wdoor"></div>
+      <div class="floorglow"></div>
+      <div class="note" id="wnote">Vind de deur — klik op de wand</div>
+    </div>
+  </div>
+  <div class="svc-sep"></div>
+  <!-- 7 houtverbindingen -->
+  <div id="s-houtverbindingen">
+   <div class="svc">
+    <div class="copy">
+      <div class="eyebrow rv">07 — Op de tekentafel</div>
+      <h3 class="rv">Houtverbindingen</h3>
+      <p class="rv"><strong>Verstek in eiken.</strong> Op een buitenhoek komen twee zaagvlakken samen. Kies waar de nerf doorloopt en hoe scherp of zacht de afgewerkte rand mag aanvoelen.</p>
+      <p class="rv">Bij het uitzoeken van het hout kunt u twee delen naast elkaar houden. Dan ziet u direct of de kleur en de richting van de nerf bij de hoek passen.</p>
+    </div>
+    <div class="demo miter rv" id="miter">
+      <div class="obj"><div class="shadow"></div><div class="f f1"></div><div class="f f2"></div><div class="edge45"></div></div>
+      <div class="lbl" id="miterlbl">Beweeg erover — de delen sluiten aan</div>
+    </div>
+   </div>
+   <div class="verstek-photo rv" id="vphoto"><img src="assets/verstek.jpg" alt="Verstekhoek in eiken"><div class="cover"></div><div class="glass" id="glass"></div></div>
+   <div class="miter-copy">
+     <h3 class="rv">De nerf loopt <em>de hoek om.</em></h3>
+     <p class="rv">Bij een verstekhoek ontmoeten twee schuine zaagsneden elkaar. Door de tekening van het eikenhout vooraf uit te lijnen, loopt de nerf van het ene vlak door in het andere.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- RUIMTE -->
+<section id="ruimte">
+ <div class="wrap">
+  <div class="ruimte-head">
+    <h2 class="rv"><span class="mask"><span>Het begint bij</span></span><span class="mask"><span><em>de ruimte zelf.</em></span></span></h2>
+    <p class="lead rv">We beginnen met kijken en meten. Hoe loopt de vloer? Waar raakt nieuw hout aan bestaand steen? Die aansluitingen bepalen we al vóór de eerste zaagsnede.</p>
+  </div>
+  <div class="acc rv" id="acc">
+    <div class="card on" data-snd="whoosh"><img src="assets/zichtlijn.jpg" alt="De zichtlijn"><div class="t"><span class="num">i.</span><h4>De zichtlijn</h4></div></div>
+    <div class="card" data-snd="whoosh"><img src="assets/montage.jpg" alt="De montage"><div class="t"><span class="num">ii.</span><h4>De montage</h4></div></div>
+    <div class="card" data-snd="whoosh"><img src="assets/materiaal.jpg" alt="Het materiaal"><div class="t"><span class="num">iii.</span><h4>Het materiaal</h4></div></div>
+    <div class="measure" id="measure"><div class="h"></div><div class="v"></div><b id="mx"></b><b id="my"></b></div>
+  </div>
+ </div>
+</section>
+
+<!-- VOLUME -->
+<section id="volume">
+  <div class="sticky">
+    <div>
+      <div class="eyebrow">Sfeerbeelden en bouwschets</div>
+      <h2 style="margin:20px 0 24px">Van vlak<br><em>naar volume.</em></h2>
+      <p class="lead">Bekijk hoe de ruimte vorm krijgt. De vloer bepaalt de basis, de wanden geven richting en het laatste element maakt de verhoudingen zichtbaar.</p>
+      <div class="phase" id="phase"><div><i></i>De vloer — de basis</div><div><i></i>De wanden — de richting</div><div><i></i>Het element — de verhouding</div></div>
+    </div>
+    <svg viewBox="0 0 700 520" id="vol"></svg>
+    <div class="sketch" id="sketch"><img src="assets/bouwschets.png" alt="Bouwschets"><span>Bouwschets</span></div>
+  </div>
+</section>
+
+<!-- AANVRAAG -->
+<section id="aanvraag">
+ <div class="wrap req">
+  <div>
+    <div class="eyebrow rv">Aanvraag</div>
+    <h2 class="rv" style="margin:20px 0 26px"><span class="mask"><span>Wat wilt u</span></span><span class="mask"><span><em>bouwen?</em></span></span></h2>
+    <p class="lead rv">Een plattegrond en enkele foto’s vormen een goed vertrekpunt voor het eerste gesprek.</p>
+    <svg class="house" id="house" viewBox="0 0 420 300">
+      <path class="ln h1" d="M40 270 H380 M70 270 V140 H350 V270"/>
+      <path class="ln h2" d="M50 150 L210 40 L370 150 M290 95 V60 H320 V115"/>
+      <path class="ln h3" d="M180 270 V200 H240 V270 M100 170 H150 V215 H100 Z M270 170 H320 V215 H270 Z M125 170 V215 M295 170 V215"/>
+    </svg>
+  </div>
+  <form class="form rv" id="form" onsubmit="return false" novalidate>
+    <div class="prog"><span class="on"></span><span></span><span></span><span></span></div>
+    <div class="fstep on" data-s="0">
+      <span class="num">Stap 1 / 3</span><h3>Uw bouwplan</h3>
+      <p>Wat wilt u veranderen aan het gebouw? Vertel wat er nu zit en wat u straks wilt zien of kunnen doen.</p>
+      <div class="chips" id="fchips"></div>
+      <div class="fld"><textarea rows="3" id="f1" placeholder=" "></textarea><label for="f1">Wat zit er nu, wat wilt u straks?</label></div>
+      <div class="drop" id="drop">＋ Sleep hier een plattegrond of foto’s (blijft op uw apparaat)<input type="file" id="file" accept="image/*" multiple hidden></div><div class="thumbs" id="thumbs"></div>
+    </div>
+    <div class="fstep" data-s="1">
+      <span class="num">Stap 2 / 3</span><h3>Toegang en bescherming</h3>
+      <p>Waar komen materialen binnen? Welke vloeren, doorgangen en bestaande afwerkingen vragen bescherming?</p>
+      <div class="chips" id="fchips2"></div>
+      <div class="fld"><textarea rows="3" id="f2" placeholder=" "></textarea><label for="f2">Toelichting toegang en bescherming</label></div>
+    </div>
+    <div class="fstep" data-s="2">
+      <span class="num">Stap 3 / 3</span><h3>Planning en oplevering</h3>
+      <p>Wanneer kunnen de werkzaamheden beginnen en wanneer wilt u de ruimte gebruiken?</p>
+      <div class="fld"><input type="month" id="f3" placeholder=" "><label for="f3">Start mogelijk vanaf</label></div>
+      <div class="fld"><input type="month" id="f4" placeholder=" "><label for="f4">Ruimte in gebruik vanaf</label></div>
+      <div class="fld"><input type="text" id="f5" placeholder=" "><label for="f5">Uw naam</label></div>
+    </div>
+    <div class="fstep" data-s="3">
+      <div class="done"><svg viewBox="0 0 120 120"><circle class="ck" cx="60" cy="60" r="52"/><path class="ck" d="M36 62 L54 78 L86 44"/></svg>
+      <h3>Uw plan ligt op tafel.</h3><p>Demo-ontwerp — er is niets verzonden. Hieronder ziet u de samenvatting.</p>
+      <div class="summary" id="summary"></div></div>
+    </div>
+    <div class="fnav"><button type="button" class="back" id="fback" data-snd="tick">← Terug</button><button type="button" class="btn small" id="fnext" data-snd="click">Volgende →</button></div>
+  </form>
+ </div>
+</section>
+
+<footer>
+  <div class="slot"><div class="ph" id="slotph"></div><h2>Precisie tot in <em>de afwerking.</em></h2></div>
+  <div class="foot">
+    <img src="assets/logo-light.png" alt="Soesman Bouw">
+    <div class="level" title="Waterpas — beweeg de muis"><i id="bubble"></i></div>
+    <span class="demo-tag">Soesman Bouw / Websiteontwerp — interactieve demo</span>
+  </div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
